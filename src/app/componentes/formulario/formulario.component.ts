@@ -57,10 +57,10 @@ export class FormularioComponent implements OnInit {
 
       if (!/^\d+$/.test(telefone)) {
         this.mensagemErroTelefone = "Insira somente números.";
-      }
-
-      if (/^\d+$/.test(telefone) && telefone.length < 10) {
+      } else if (/^\d+$/.test(telefone) && telefone.length < 10) {
         this.mensagemErroTelefone = "Insira DDD + número.";
+      }else{
+        this.mensagemErroTelefone = "Número inválido.";
       }
 
     }
