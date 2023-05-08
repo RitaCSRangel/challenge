@@ -1,0 +1,66 @@
+<div class="form-container">
+
+    <div class="form-elementos">
+
+        <!-- NOME -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="nome" >Nome</label>
+            <input class="form-input-area" type="text" id="nome" name="nome" placeholder="Digite seu nome" [(ngModel)]="nome"><br><br>
+        </div>
+
+        <!-- SOBRENOME -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="sobrenome">Sobrenome</label>
+            <input class="form-input-area" type="text" id="sobrenome" name="sobrenome"
+                placeholder="Digite seu sobrenome" [(ngModel)]="sobrenome"><br><br>
+        </div>
+
+        <!-- TELEFONE -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="telefone">Telefone</label>
+            <input class="form-input-area" type="text" id="telefone" name="telefone"
+                placeholder="(00) 00000-0000" [(ngModel)]="telefone" (change)="ValidarTelefone(telefone)" [class]="telefoneInvalido? 'form-input-area-error': 'form-input-area'">
+            <span *ngIf="telefoneInvalido" class="form-input-area-msgErro"> {{mensagemErroTelefone}}</span>
+                <br><br>
+        </div>
+
+        <!-- CEP -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="cep">CEP</label>
+            <input class="form-input-area" type="text" id="cep" name="cep" placeholder="00000-000" [(ngModel)]="cep" (change)="ConsultarCEP(cep)" [class]="cepInvalido? 'form-input-area-error': 'form-input-area'">
+            <span *ngIf="cepInvalido" class="form-input-area-msgErro"> {{mensagemErroCep}}</span>
+            <br><br>
+        </div>
+
+        <!-- RUA -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="rua">Rua</label>
+            <input class="form-input-area" type="text" id="rua" name="rua" placeholder="" [(ngModel)]="rua"><br><br>
+        </div>
+
+        <!-- COMPLEMENTO -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="complemento">Complemento</label>
+            <input class="form-input-area" type="text" id="complemento" name="complemento" placeholder="" [(ngModel)]="complemento"><br><br>
+        </div>
+
+        <!-- BAIRRO -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="bairro">Bairro</label>
+            <input class="form-input-area" type="text" id="bairro" name="bairro" placeholder="" [(ngModel)]="bairro"><br><br>
+        </div>
+
+        <!-- CIDADE -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="cidade">Cidade</label>
+            <input class="form-input-area" type="text" id="cidade" name="cidade" placeholder="" [(ngModel)]="cidade"><br><br>
+        </div>
+
+        <!-- ESTADO -->
+        <div class="form-atrib-input">
+            <label class="form-input-label" for="estado">Estado</label>
+            <input class="form-input-area" type="text" id="estado" name="estado" placeholder="" [(ngModel)]="estado"><br><br>
+        </div>
+    </div>
+
+</div>

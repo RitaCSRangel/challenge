@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+a{
+    color: #26BBEC;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #EE5281;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.footer-nome{
+    display: flex;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 15px;
+    margin: 20px;
+    color: #ffffff;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.footer-creditos{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-creditos-txt{
+    display: flex;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 15px;
+    margin: 20px;
+    color: #ffffff;
+    margin: 2px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 400px) {
+
+    .footer-nome {
+        font-size: 10px;
+    }
+    .footer-creditos-txt {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.body-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.body-titulo {
+    display: flex;
+    flex-direction: column;
+    height: 284px;
+}
+
+.body-titulo-upper-img {
+    display: flex;
+}
+
+.body-titulo-txt1 {
+    display: flex;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    margin: 0;
+    color: #000000;
+
+}
+
+.body-titulo-txt2 {
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    color: #EE5281;
+}
+
+.body-titulo-txt3 {
+    display: flex;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+    color: #FFFFFF;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    margin-left: 20%;
+    margin-top: -2%;
+    margin-bottom: 0;
+}
+
+.body-titulo-bottom-img {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.body-introdutorio {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-introdutorio-img {
+    width: 343px;
+}
+
+.body-introdutorio-texto {
+    width: 342px;
+    height: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 400px) {
+
+    .body-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-titulo-txt1 {
+        font-size: 79px;
+    }
+
+    .body-introdutorio {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    /* .body-titulo {
+        margin-top: 242px;
+        margin-left: 50px;
+    }
+
+    .body-introdutorio {
+        margin-top: 224px;
+        margin-left: 204px;
+    } */
+}
+
+@media (min-width: 1220px) {
+
+    .body-container {
+        justify-content: space-around;
+    }
+}

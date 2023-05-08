@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.header-bar {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.header-titulo {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.header-nome {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #000000;
+    margin: 10px;
+    width: auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.header-nav {
+    display: flex;
+    gap: 20%;
+}
+
+.header-nav-itens {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-logo-img2{
+margin-right: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 400px) {
+
+    .header-bar {
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-logo-img2 {
+        display: none;
+    }
+
+    .header-nav {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 962px) {
+
+    .header-bar {
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+    }
+
+    .header-nome{
+        font-size: 30px;
+    }
+
+    .header-nav{
+        gap: 5%;
+    }
+
+    .header-logo-img2 {
+        display: none;
+    }
+    
+}
